@@ -1,0 +1,39 @@
+.stephbktype-page {
+    padding: 2rem;
+}
+
+.stephbktype-page h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.stephbktype-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.stephbktype-option-card {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stephbktype-option-card:hover {
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+.stephbktype-option-card.selected {
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+.stephbktype-option-label {
+    font-size: 1rem;
+}

@@ -1,0 +1,53 @@
+.step2price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input[type="number"],
+.input-group input[type="text"] {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.guest-price {
+    font-weight: 500;
+    color: #555;
+}
+
+.premium-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.premium-slider input[type="range"] {
+    width: 100%;
+}
+
+.tip {
+    font-size: 12px;
+    color: #888;
+}

@@ -1,0 +1,153 @@
+.host-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.host-body {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.host-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.host-left h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.host-step-content {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    min-height: 250px;
+    box-shadow: 0 2px 6px rgba(146, 146, 146, 0.08);
+}
+
+.host-footer {
+    display: flex;
+    flex-direction: column;
+    /* stack progress above buttons */
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid #eee;
+    background: #fff;
+    position: sticky;
+    bottom: 0;
+}
+
+.host-progress {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.host-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn,
+.next-btn,
+.submit-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-btn {
+    background: #ff1c42;
+    color: white;
+}
+
+.back-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.next-btn {
+    background: #ff1c42;
+    color: white;
+}
+
+.next-btn:hover,
+.back-btn:hover,
+.submit-btn:hover {
+    background: #ff3153;
+}
+
+.submit-btn {
+    background: #ff1c42;
+    color: white;
+}
+
+
+/* hosting  first page  */
+
+
+.host-welcome {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.host-welcome-left .welcome-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.host-welcome-right h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.host-welcome-right p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* ---------------- Mobile Responsive ---------------- */
+@media (max-width: 768px) {
+    .host-welcome {
+        grid-template-columns: 1fr;
+        /* single column */
+        text-align: center;
+    }
+
+    .host-welcome-left {
+        order: 1;
+        /* image comes first */
+        margin-bottom: 1rem;
+    }
+
+    .host-welcome-right {
+        order: 2;
+    }
+
+    .host-welcome-right h1 {
+        font-size: 1.8rem;
+    }
+
+    .host-welcome-left .welcome-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
