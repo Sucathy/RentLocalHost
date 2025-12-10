@@ -80,3 +80,120 @@
     cursor: pointer;
     margin-top: 5px;
 }
+
+
+
+
+.account-container {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    gap: 30px;
+    background: #fafafa;
+}
+
+.left-menu {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    border: 1px solid #e6e6e6;
+}
+
+.menu-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.menu-item:hover {
+    background: #f4f4f4;
+}
+
+.menu-item.active {
+    background: black;
+    color: white;
+}
+
+.right-content {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+}
+
+.content-box h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section h4 {
+    margin-bottom: 6px;
+}
+
+.section-box {
+    padding: 12px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.save-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.payment-section {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.note {
+    color: gray;
+    font-size: 12px;
+}
