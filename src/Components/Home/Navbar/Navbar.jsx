@@ -1,19 +1,27 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css"; // Import the external CSS file
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
+    const navigate = useNavigate();
 
     return (
         <div>
             {/* Top navigation bar */}
             <nav className="navbar">
 
-                <div className="navbar-brand">VNS</div>
+                {/* <div className="navbar-brand">VNSrooms</div> */}
+                <div
+                    className="navbar-brand"
+                    onClick={() => navigate("/")}
+                    style={{ cursor: "pointer" }}
+                >
+                    VNSrooms
+                </div>
 
                 <div className="menu-icon" onClick={toggleMenu}>
                     ☰
