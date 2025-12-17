@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Aboutus from "./Components/Home/Fotter/Aboutus/Aboutus";
 import HostHome from "./Components/Home/HostHome";
 import Profile from "./Components/Home/Menubar/Profile/Profile";
 import Support from "./Components/Home/Menubar/Support/Support";
@@ -34,6 +35,7 @@ function App() {
 
 
           <Route path="/support" element={<Support />} />
+          <Route path="/aboutus" element={<Aboutus />} />
 
 
           <Route path="/login" element={<Login />} />
