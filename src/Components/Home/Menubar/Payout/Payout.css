@@ -1,0 +1,49 @@
+.payout-container {
+    padding: 30px;
+    background: #f6f7fb;
+    min-height: 100vh;
+}
+
+.payout-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.payout-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.payout-card:hover {
+    transform: translateY(-4px);
+}
+
+.payout-card h3 {
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.payout-card.highlight {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+}
+
+.payout-card.highlight .card-title {
+    color: #dbeafe;
+}

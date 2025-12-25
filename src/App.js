@@ -11,6 +11,7 @@ import SignUp from "./Components/Login/SignUp";
 import HostListingEdit from "./Components/HostHomeLand/HostListing/HostListingEdit";
 
 import AccountSetting from "./Components/Home/Menubar/AccountSettings/AccountSetting";
+import Payout from "./Components/Home/Menubar/Payout/Payout";
 import HostListingLayout from "./Components/HostListingForm/HostListingLayout";
 import Step1PropertyType from "./Components/HostListingForm/Step1PropertyType";
 import Step2Price from "./Components/HostListingForm/Step2price";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<HostHome />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/accountsetting" element={<AccountSetting />} />
+          <Route path="/payout" element={<Payout />} />
 
 
           <Route path="/support" element={<Support />} />

@@ -1,12 +1,11 @@
-/* Layout */
-.account-container {
+/* .account-container {
     display: flex;
     min-height: 100vh;
     background: #f5f7fb;
     font-family: "Inter", system-ui, sans-serif;
 }
 
-/* LEFT MENU */
+
 .left-menu {
     width: 240px;
     background: #ffffff;
@@ -47,13 +46,11 @@
     font-weight: 500;
 }
 
-/* RIGHT CONTENT */
 .right-content {
     flex: 1;
     padding: 32px;
 }
 
-/* CONTENT BOX */
 .content-box {
     background: #ffffff;
     border-radius: 12px;
@@ -68,7 +65,6 @@
     color: #111827;
 }
 
-/* SECTIONS */
 .section {
     margin-bottom: 22px;
 }
@@ -89,7 +85,8 @@
     color: #111827;
 }
 
-/* FORM INPUTS */
+
+
 .section input {
     width: 100%;
     padding: 12px 14px;
@@ -112,7 +109,7 @@
     cursor: not-allowed;
 }
 
-/* BUTTON */
+
 .btn {
     width: 100%;
     background: #ff1c42;
@@ -134,7 +131,7 @@
     transform: scale(0.98);
 }
 
-/* STATUS & MESSAGES */
+
 .message {
     margin-top: 12px;
     font-size: 14px;
@@ -153,19 +150,17 @@
     margin-bottom: 10px;
 }
 
-/* VERIFICATION STATUS */
 .section-box {
     line-height: 1.6;
 }
 
-/* LOADING */
+
 .content-box:only-child {
     text-align: center;
     font-size: 15px;
     color: #6b7280;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .account-container {
         flex-direction: column;
@@ -189,5 +184,198 @@
 
     .right-content {
         padding: 20px;
+    }
+} */
+
+
+
+/* ===== PAGE LAYOUT ===== */
+.account-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    background: #f6f7fb;
+    min-height: 100vh;
+}
+
+.content-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* ===== STATUS BOX ===== */
+.section-box {
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+/* ===== TABLE HEADER ===== */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.table-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===== ADD BUTTON ===== */
+.add-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+    background: #222;
+}
+
+/* ===== BANK TABLE ===== */
+.bank-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.bank-table thead {
+    background: #f3f4f6;
+}
+
+.bank-table th,
+.bank-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    color: #444;
+}
+
+.bank-table th {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.bank-table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* ===== FORM ===== */
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.section input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section input:focus {
+    border-color: #0c0c0c;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.section input[disabled] {
+    background: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Make inputs full width where needed */
+.section input:nth-child(1),
+.section input:nth-child(3) {
+    grid-column: span 2;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.btn {
+    grid-column: span 2;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #ff385c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #ac1b36;
+}
+
+.btn:disabled {
+    background: #ff385c;
+    cursor: not-allowed;
+}
+
+/* ===== MESSAGES ===== */
+.message {
+    grid-column: span 2;
+    margin-top: 10px;
+    color: #16a34a;
+    font-size: 14px;
+}
+
+.error {
+    margin-top: 8px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+.info {
+    grid-column: span 2;
+    font-size: 13px;
+    color: #ff385c;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .section input,
+    .btn {
+        grid-column: span 1;
+    }
+
+    .bank-table th,
+    .bank-table td {
+        font-size: 12px;
+        padding: 10px;
     }
 }

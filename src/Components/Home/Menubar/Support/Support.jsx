@@ -23,7 +23,7 @@ const Support = () => {
 
                         <div className="support-item">
                             <Mail className="support-icon" />
-                            <span>susuresh158@gmail.com</span>
+                            <span>vnsroomss@gmail.com</span>
                         </div>
 
                         <div className="support-item">

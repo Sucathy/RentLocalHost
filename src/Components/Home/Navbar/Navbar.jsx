@@ -45,6 +45,9 @@ const Navbar = () => {
                 <Link to="/accountsetting" className="nav-link" onClick={toggleMenu}>
                     account setting
                 </Link>
+                <Link to="/payout" className="nav-link" onClick={toggleMenu}>
+                    payout
+                </Link>
                 {/* <Link to="/wishlist" className="nav-link" onClick={toggleMenu}>
                     Wishlist
                 </Link>
